@@ -3,7 +3,7 @@ import java.util.Random;
 public class Sketch extends PApplet {
   Random r = new Random();
 	
-  /**
+  /** 
    * Called once at the beginning of execution, put your size all in this method
    */
   public void settings() {
@@ -26,8 +26,8 @@ public void setup() {
  */
 public void draw() {
   
-  int scaledwidth = width/400;
-  int scaledheight = height/400;
+  int scaledWidth = width/400;
+  int scaledHeight = height/400;
 
 // sun
 float sunX = r.nextInt(400);
@@ -49,48 +49,48 @@ else {
   background(34, 206, 245);
 }
 
-ellipse(sunX * scaledwidth, sunY * scaledheight, 100 * scaledwidth, 100 * scaledheight);
+ellipse(sunX * scaledWidth, sunY * scaledHeight, 100 * scaledWidth, 100 * scaledHeight);
 
 // ground color (foreground)
   stroke(74, 50, 1);
   fill(74, 50, 1);
-  rect(0 * scaledwidth, 325 * scaledheight, 400 * scaledwidth, 100 * scaledheight);
+  rect(0 * scaledWidth, 325 * scaledHeight, 400 * scaledWidth, 100 * scaledHeight);
 
 // lawn (foreground)
   stroke(0);
   fill(22, 181, 72);
-  rect(75 * scaledwidth, 325 * scaledheight, 275 * scaledwidth, 250 * scaledheight);
+  rect(75 * scaledWidth, 325 * scaledHeight, 275 * scaledWidth, 250 * scaledHeight);
   //rect(600, 650, 250, 50);
 
 // pathway (foreground)
   stroke(0);
   fill(130, 148, 148);
-  rect(195 * scaledwidth, 325 * scaledheight, 40 * scaledwidth, 100 * scaledheight);    
+  rect(195 * scaledWidth, 325 * scaledHeight, 40 * scaledWidth, 100 * scaledHeight);    
   
 // house shape
   stroke(0);
   fill(247, 186, 62);
-  rect(125 * scaledwidth, 150 * scaledheight, 175 * scaledwidth, 175 * scaledheight);
+  rect(125 * scaledWidth, 150 * scaledHeight, 175 * scaledWidth, 175 * scaledHeight);
 
 // roof
   stroke(0);
   fill(153, 99, 0);
-  triangle(75 * scaledwidth, 150 * scaledheight, 212 * scaledwidth , 50 * scaledheight, 350 * scaledwidth, 150 * scaledheight);
+  triangle(75 * scaledWidth, 150 * scaledHeight, 212 * scaledWidth , 50 * scaledHeight, 350 * scaledWidth, 150 * scaledHeight);
   
 //door
   stroke(0);
   fill(74, 50, 1);
-  rect(195 * scaledwidth, 275 * scaledheight, 40 * scaledwidth, 50 * scaledheight);
-  ellipse(230 * scaledwidth, 305 * scaledheight, 7 * scaledwidth, 7 * scaledheight);
+  rect(195 * scaledWidth, 275 * scaledHeight, 40 * scaledWidth, 50 * scaledHeight);
+  ellipse(230 * scaledWidth, 305 * scaledHeight, 7 * scaledWidth, 7 * scaledHeight);
 
 // window
   stroke(0);
   fill(185, 250, 249);
-  rect(195 * scaledwidth , 175 * scaledheight, 40 * scaledwidth, 40 * scaledheight);
+  rect(195 * scaledWidth , 175 * scaledHeight, 40 * scaledWidth, 40 * scaledHeight);
   
   // line(390, 390, 470, 390);
-  line(195 * scaledwidth, 195 * scaledheight, 235 * scaledwidth, 195 * scaledheight);
-  line(215 * scaledwidth, 175 * scaledheight, 215 * scaledwidth, 215* scaledheight);
+  line(195 * scaledWidth, 195 * scaledHeight, 235 * scaledWidth, 195 * scaledHeight);
+  line(215 * scaledWidth, 175 * scaledHeight, 215 * scaledWidth, 215* scaledHeight);
   
   
 
